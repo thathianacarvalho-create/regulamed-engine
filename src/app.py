@@ -50,7 +50,7 @@ def principal():
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.subtitle("📥 Entrada de Solicitação de Regulação")
+        st.subheader("📥 Entrada de Solicitação de Regulação")
         especialidade = st.selectbox("Especialidade Médica", ["Cardiologia", "Neurologia", "Ortopedia", "Dermatologia"])
         caso_clínico = st.text_area("Descrição do Caso Clínico", placeholder="Descreva os sintomas, histórico e queixa principal do paciente...")
         

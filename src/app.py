@@ -50,13 +50,13 @@ def agente_triagem(especialidade: str, caso_clinico: str):
         return {
             "status": "ALTA PRIORIDADE (VERMELHO)",
             "prazo": f"Atendimento imediato em até {dados_pcdt['prazo_maximo_horas']} horas.",
-            caso_sanitizado:
+            "caso_sanitizado":
         }
     else:
         return {
             "status": "ELETIVO / AMBULATORIAL (VERDE/AMARELO)",
             "prazo": "Encaminhado para regulação regular conforme fila padrão.",
-            # caso_sanitizado:
+            # "caso_sanitizado":
         }
 
 # --- INTERFACE GRÁFICA PRINCIPAL ---
